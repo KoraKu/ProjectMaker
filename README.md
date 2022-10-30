@@ -1,2 +1,2 @@
 # ProjectMaker
-A tool to help you setup C and C++ project in a easy and fast way
+A CLI tool to help you setup C and C++ project in a easy and efficient way !
