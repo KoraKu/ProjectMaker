@@ -6,5 +6,6 @@
 #include "const.h"
 
 #include "heads.h"
+#include "project.h"
 
 int newcmd(int argc, char* argv[]);

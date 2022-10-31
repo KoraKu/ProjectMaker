@@ -15,8 +15,21 @@ int newpj(int argc, char *argv[], int language) {
 
     //create the whole project architecture
     mkdir("bin", 777);
+    fp = fopen("bin/info", "w"); //create "info" file
+    if (!fp) {
+        return -1;
+    }
+    fprintf(fp, "compiled program folder");
+    fclose(fp);
+
     mkdir("headers", 777);
     mkdir("obj", 777);
+    fp = fopen("obj/info", "w"); //create "info" file
+    if (!fp) {
+        return -1;
+    }
+    fprintf(fp, "Object File folder");
+    fclose(fp);
     mkdir("resources", 777);
     mkdir("todo", 777);
 
@@ -38,7 +51,7 @@ int newpj(int argc, char *argv[], int language) {
     //gitignore
     fp = fopen(".gitignore", "w");
     if (!fp) {
-        return -2;
+        return -1;
     }
 
     fprintf(fp, "%s", GITIGNORE);

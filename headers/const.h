@@ -62,4 +62,4 @@ clear :\n\
 \trm -f $(TARGET) $(OBJECTS)"
 
 
-#define GITIGNORE "bin/\nobj/\ntodo/"
+#define GITIGNORE "bin/\n!bin/info\ntodo/\n.o"
