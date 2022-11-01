@@ -1,4 +1,5 @@
 todo/
 bin/
 !bin/info
-.o
+obj/
+!obj/info
