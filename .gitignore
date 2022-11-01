@@ -1,5 +1,5 @@
 todo/
-bin/
 !bin/info
-obj/
+bin/
 !obj/info
+obj/
