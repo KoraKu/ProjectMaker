@@ -25,19 +25,20 @@ int newcmd(int argc, char* argv[]) {
     if (argc < 4) {
         errno = EINVAL;
         perror("No item provided, see 'pjm help' for a list of possible new item ");
+        return -1;
     }
 
     //Check for every item
     if (!strcmp("project", argv[3])) {
-        newpj(argc, argv, language);
+        return newpj(argc, argv, language);
     } else if (!strcmp("header", argv[3])) {
-        newheader(argc, argv, language);
+        //return newheader(argc, argv, language);
     } else if (!strcmp("headeronly", argv[3])) {
-        //newheaderonly(argc, argv, language);
+        //return newheaderonly(argc, argv, language);
     } else if (!strcmp("main", argv[3])) {
-        //newmain(argc, argv, language);
+        //return newmain(argc, argv, language);
     } else if (language && !strcmp("class", argv[3])) { //classes are specific to c++
-        //newcppclass(argc, argv, language);
+        //return newcppclass(argc, argv, language);
     } else {
         errno = EINVAL;
         perror("Invalid item name, see 'pjm help' for a list of available items");
