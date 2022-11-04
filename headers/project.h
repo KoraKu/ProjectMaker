@@ -5,7 +5,7 @@
 
 #include "const.h"
 
-#define MAKEFILE_C ="COMPILER:= gcc\
+#define MAKEFILE_C "COMPILER:= gcc\
 FLAGS := #add flags here. examples : -Wall\
 \
 FILENAME := main.c\
@@ -38,7 +38,7 @@ clear :\
 \trm -f $(OBJECTS)\
 \trm -f $(TARGET)"
 
-#define MAKEFILE_CPP = "COMPILER:= g++\
+#define MAKEFILE_CPP "COMPILER:= g++\
 FLAGS := #add flags here. examples : -Wall\
 \
 FILENAME := main.cpp\
