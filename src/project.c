@@ -9,7 +9,7 @@ int newpj(int argc, char *argv[], int language) {
     } 
 
     FILE *fp = fopen(PROJECT_FILE, "w");
-    fprintf(fp, argv[2]);
+    fprintf(fp, argv[3]);
 
     fclose(fp);
 

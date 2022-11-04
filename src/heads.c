@@ -24,14 +24,14 @@ void printheadercode(FILE *fp, char *name, int namesz) {
 
 int newheader(int argc, char *argv[], int language, int headeronly) {
     //check if enough args are provided :
-    if (argc < 5) {
+    if (argc < 4) {
         errno = EINVAL;
         perror("No header name provided");
         return -1;
     }
 
     //check if the name contains illegal char
-    if (strchr(argv[4], '/') != NULL) {
+    if (strchr(argv[3], '/') != NULL) {
         errno = EINVAL;
         perror("Invalid char for filename : '/' is not allowed ");
         return -1;
@@ -43,9 +43,9 @@ int newheader(int argc, char *argv[], int language, int headeronly) {
         extensionsz = EXT_CPP_LEN;
     }
 
-    int namelen = strlen(argv[4]);
+    int namelen = strlen(argv[3]);
     char name[namelen+extensionsz];
-    strcpy(name, argv[4]);
+    strcpy(name, argv[3]);
 
     //choose the right extension part 2
     if (language) {

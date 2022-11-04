@@ -15,3 +15,5 @@
 #include <errno.h>
 #include <sys/stat.h>
 #include <ctype.h>
+
+void getprojectlang(char *lang);
