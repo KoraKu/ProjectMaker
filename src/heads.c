@@ -10,7 +10,7 @@ void printheadercode(FILE *fp, char *name, int namesz) {
         if (newname[i] != '\0') {
             if (newname[i] <= 'z' && newname[i] >= 'a') {//uppercase every lowercase
                 newname[i] = toupper(newname[i]);
-            } else if (newname[i] > 'Z' || newname[i] < 'A') {//if char is neither uppercase or lowercase : change it to _
+            } else if (newname[i] > 'Z' || newname[i] < 'A' || newname[i] < '0' || newname[i] > '9') {//if char is neither uppercase or lowercase nor number: change it to _
                 newname[i] = '_';
             }
         }
