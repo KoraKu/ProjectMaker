@@ -14,6 +14,7 @@ int newpj(int argc, char *argv[], int language) {
     fclose(fp);
 
     mkdir("headers", 0777);
+    mkdir("src", 0777);
     mkdir("resources", 0777);
     mkdir("todo", 0777);
     mkdir("test", 0777);
