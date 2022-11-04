@@ -12,7 +12,7 @@ To create a new project with ProjectManager you must provide the following argum
 
 ###### Example :
 ```
-pjm new project c
+$ pjm new project c
 ``` 
 
 This command will create the hierarchy of a project in **the current directory** following this layout :
@@ -41,6 +41,8 @@ To create a new header you must provide the following arguments :
 - `new`
 - `header` or `headeronly` if you do not wish a associated source file
 - header name
+
+> Important : Make sure you execute the command at the root of your project
 
 ###### Example :
 ```
