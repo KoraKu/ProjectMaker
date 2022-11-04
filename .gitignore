@@ -2,4 +2,4 @@ todo/
 bin/
 obj/
 .vscode
-test
+test/
