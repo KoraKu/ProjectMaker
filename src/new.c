@@ -32,9 +32,9 @@ int newcmd(int argc, char* argv[]) {
     if (!strcmp("project", argv[3])) {
         return newpj(argc, argv, language);
     } else if (!strcmp("header", argv[3])) {
-        //return newheader(argc, argv, language);
+        return newheader(argc, argv, language, 0);
     } else if (!strcmp("headeronly", argv[3])) {
-        //return newheaderonly(argc, argv, language);
+        return newheader(argc, argv, language, 1);
     } else if (!strcmp("main", argv[3])) {
         //return newmain(argc, argv, language);
     } else if (language && !strcmp("class", argv[3])) { //classes are specific to c++
