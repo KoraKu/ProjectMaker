@@ -10,7 +10,7 @@ To create a new project with ProjectManager you must provide the following argum
 > See [Supported Languages](#lang)
 - `project`
 
-This command will create the hierachy of a project in the current directory in the following patern :
+This command will create the hierarchy of a project in the current directory following this layout :
 
 ```
 .
