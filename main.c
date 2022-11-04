@@ -15,14 +15,14 @@ int main(int argc, char *argv[]) {
         return -1;
     }
 
-    //do first the help :
+    //do first the help : not implemented yet...
     if (!strcmp("help", argv[1])) {
         //call help function  
     }
-    //the the new function
+    //then, the new function :
     else if (!strcmp("new", argv[1])) {
-        newcmd(argc, argv);
-
+        return newcmd(argc, argv);//newcmd return -1 if fail thus main must return the result of newcmd if it fail.
+        
     } else {
         errno = EINVAL;
         perror("First argument must be 'new' or 'help', see 'pjm help' for detailed explaination ");
