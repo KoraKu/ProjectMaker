@@ -71,4 +71,6 @@ clear :\n\
 \trm -f $(OBJECTS)\n\
 \trm -f $(TARGET)"
 
+#define GITIGNORE "bin/\nobj/\ntodo/\ntest/"
+
 int newpj(int argc, char *argv[], int language);
