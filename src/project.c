@@ -13,26 +13,10 @@ int newpj(int argc, char *argv[], int language) {
 
     fclose(fp);
 
-    //create the whole project architecture
-    mkdir("bin", 0777);
-    fp = fopen("./bin/info", "w"); //create "info" file
-    if (!fp) {
-        printf("UwU ? :(\n");
-        return -1;
-    }
-    fprintf(fp, "compiled program folder");
-    fclose(fp);
-
     mkdir("headers", 0777);
-    mkdir("obj", 0777);
-    fp = fopen("./obj/info", "w"); //create "info" file
-    if (!fp) {
-        return -1;
-    }
-    fprintf(fp, "Object File folder");
-    fclose(fp);
     mkdir("resources", 0777);
     mkdir("todo", 0777);
+    mkdir("test", 0777);
 
     //creating the files
     //makefile
