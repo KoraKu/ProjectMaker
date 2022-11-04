@@ -6,11 +6,14 @@ A CLI tool to help you setup and manage C and C++ project in a easy and efficien
 
 To create a new project with ProjectManager you must provide the following arguments :
 - `new` 
-- the project programming language
-> See [Supported Languages](#lang)
+- The project programming language
+> See [Supported Languages](#supported-languages)
 - `project`
 
-This command will create the hierarchy of a project in the current directory following this layout :
+###### Example :
+`pjm new c project` 
+
+This command will create the hierarchy of a project in **the current directory** following this layout :
 
 ```
 .
@@ -28,8 +31,8 @@ This command will create the hierarchy of a project in the current directory fol
 
 > Note : the makefile is made to work with the `src` & `header` folder along side a `main.c` (or `.cpp`) in `./`.
 
-> Note : `todo`, `test`, the `.o`'s and executable files resulting from the comilation (respectivly stored in `obj/` and `bin/`, both created by `makefile` when compiling) are all ignored by `.gitignore` by default.
+> Note : `todo`, `test`, the `.o`'s and executable files resulting from the comilation (respectivly stored in `obj/` and `bin/`, both created by `makefile` when compiling) are all **ignored** by `.gitignore` by default.
 
-## Supported Languages {#lang}
+## Supported Languages
  
-ProjectManager support the creation and management of C and C++ projects only.
+ProjectManager support the creation and management of **C** and **C++** projects only.
