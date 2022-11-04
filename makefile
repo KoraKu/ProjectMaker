@@ -1,5 +1,5 @@
 COMPILER:= gcc
-FLAGS :=
+FLAGS := -Wall
 
 FILENAME := main.c
 TARGET := bin/main
