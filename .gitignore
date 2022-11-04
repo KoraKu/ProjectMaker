@@ -1,5 +1,4 @@
 todo/
-!bin/info
 bin/
-!obj/info
 obj/
+.vscode
