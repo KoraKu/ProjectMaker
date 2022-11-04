@@ -14,7 +14,3 @@
 #include <string.h>
 #include <errno.h>
 #include <sys/stat.h>
-
-
-
-#define GITIGNORE "bin/\n!bin/info\ntodo/\n.o"
