@@ -70,6 +70,10 @@ This command will add two files to our current project :
 
 > Note : All **non-alphanumerical** characters will be turned to `_` in the header file's text
 
+### Creating main
+
+> will do later
+
 ## Supported Languages
  
 ProjectManager support the creation and management of **C** and **C++** projects only.
