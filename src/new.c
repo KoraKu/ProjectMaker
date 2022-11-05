@@ -62,7 +62,7 @@ int newcmd(int argc, char* argv[]) {
     } else if (!strcmp("headeronly", argv[2])) {
         return newheader(argc, argv, language, 1);
     } else if (!strcmp("main", argv[2])) {
-        //return newmain(argc, argv, language);
+        return newmain(argc, argv, language);
     } else if (language && !strcmp("class", argv[2])) { //classes are specific to c++
         //return newcppclass(argc, argv, language);
     } else {

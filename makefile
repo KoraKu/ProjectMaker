@@ -2,7 +2,7 @@ COMPILER:= gcc
 FLAGS := -Wall
 
 FILENAME := main.c
-TARGET := bin/main
+TARGET := bin/pjm
 
 # Getting all sources files in src folder
 SOURCES = $(wildcard src/*.c)
