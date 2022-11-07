@@ -72,7 +72,13 @@ This command will add two files to our current project :
 
 ### Creating main
 
-> will do later
+TO create the main file for your program use this command :
+
+```
+pjm new main
+```
+
+This command will create `main.c / .cpp` in your project directory
 
 ## Supported Languages
  
