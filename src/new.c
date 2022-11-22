@@ -64,7 +64,7 @@ int newcmd(int argc, char* argv[]) {
     } else if (!strcmp("main", argv[2])) {
         return newmain(argc, argv, language);
     } else if (language && !strcmp("class", argv[2])) { //classes are specific to c++
-        //return newcppclass(argc, argv, language);
+        return newclass(argc, argv);
     } else {
         errno = EINVAL;
         perror("Invalid item name, see 'pjm help' for a list of available items");

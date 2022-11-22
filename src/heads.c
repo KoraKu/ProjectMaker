@@ -54,6 +54,8 @@ int newheader(int argc, char *argv[], int language, int headeronly) {
         strcat(name, EXT_C);
     }
 
+    argv[3] = name;
+
    
 
     //change to headers directory

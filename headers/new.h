@@ -8,5 +8,6 @@
 #include "heads.h"
 #include "project.h"
 #include "mainfile.h"
+#include "class.h"
 
 int newcmd(int argc, char* argv[]);
