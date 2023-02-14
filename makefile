@@ -37,3 +37,14 @@ clear :
 	@rm -f $(OBJECTS)
 	@rm -f $(TARGET)
 	@echo "-> Removed executables and .o fles."
+
+#to install the program on the computer
+install : $(TARGET)
+	@echo "-> moving executable to ~/bin"
+	@mkdir -p ~/bin
+	@mv $(TARGET) ~/bin/pjm
+	
+#to remove the program from the computer
+remove : 
+	@echo "Removing..."
+	@rm -f ~/bin/$(TARGET)
