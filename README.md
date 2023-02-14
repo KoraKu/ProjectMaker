@@ -1,7 +1,19 @@
 # ProjectMaker
 A CLI tool to help you setup and manage C and C++ project in a easy and efficient way !
 
+## Installation
+Clone the repository into a folder of your choice then execute `make install` in that directory.
+You may now delete the cloned repository and Project Manager will be installed on your computer.
+
+> Note : You may want to keep the `makefile` if you wish to unistall Project Manager. Alternatively it can be redownloaded at a later time
+
+## Uninstall
+To remove execute `make remove` or manually remove pjm in `~/bin`
+
 ## Usage
+
+There are 4 task that Project Manager make easier, one of which is C++ only.
+
 ### Creating new Project
 
 To create a new project with ProjectManager you must provide the following arguments :
@@ -33,7 +45,7 @@ This command will create the hierarchy of a project in **the current directory**
 
 > Note : the makefile is made to work with the `src` & `header` folder along side a `main.c` (or `.cpp`) in `./`.
 
-> Note : `todo`, `test`, `.pjm.info`, the `.o`'s and executable files resulting from the comilation (respectivly stored in `obj/` and `bin/`, both created by `makefile` when compiling) are all **ignored** by `.gitignore` by default.
+> Note : `todo`, `test`, `.pjm.info`, the `.o`'s and executable files resulting from the compilation (respectivly stored in `obj/` and `bin/`, both created by `makefile` when compiling) are all **ignored** by `.gitignore` by default.
 
 ### Creating headers
 
@@ -70,9 +82,19 @@ This command will add two files to our current project :
 
 > Note : All **non-alphanumerical** characters will be turned to `_` in the header file's text
 
+### Creating class
+
+To create a class the project language must be C++.
+Project Manager also generate template class inside the generated files making `class` more useful than `header` when working with C++
+
+Class creation is the same as header creation with the `class` keyword replacing the `header` keyword
+
+`pjm new class entity`
+
+> Note : Everything from header creation also applies to class creation
 ### Creating main
 
-TO create the main file for your program use this command :
+To create the main file for your program use this command :
 
 ```
 pjm new main
