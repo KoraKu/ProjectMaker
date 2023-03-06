@@ -1,5 +1,6 @@
 # ProjectMaker
 A CLI tool to help you setup and manage C and C++ project in a easy and efficient way !
+Currently the help has not been written in the program please refer to this page for usage while waiting for future update.
 
 ## Installation
 Clone the repository into a folder of your choice then execute `make install` in that directory.
