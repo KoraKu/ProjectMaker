@@ -16,7 +16,7 @@ int newcmd(int argc, char* argv[]) {
         
         if (argc < 4) {
             errno = EINVAL;
-            perror("No project language was provided");
+            perror("No project language was provided, choose either \"c\" or \"cpp\"");
             return -1;
         }
 
