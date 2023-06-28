@@ -1,4 +1,5 @@
 #include "../headers/new.h"
+#include <string.h>
 
 int language = -1;
 
@@ -65,6 +66,8 @@ int newcmd(int argc, char* argv[]) {
         return newmain(argc, argv, language);
     } else if (language && !strcmp("class", argv[2])) { //classes are specific to c++
         return newclass(argc, argv);
+    } else if (!strcmp("dir", argv[2])) {
+        return newdir(argc, argv);
     } else {
         errno = EINVAL;
         perror("Invalid item name, see 'pjm help' for a list of available items");

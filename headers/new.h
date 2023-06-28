@@ -9,5 +9,6 @@
 #include "project.h"
 #include "mainfile.h"
 #include "class.h"
+#include "directory.h"
 
 int newcmd(int argc, char* argv[]);
