@@ -4,7 +4,7 @@
 int newpj(int argc, char *argv[], int language) {
     if (access(PROJECT_FILE, F_OK) == 0) {
         errno = EEXIST;
-        perror("Current directory is already a project ");
+        perror("Current directory is already a project.");
         return -1;
     } 
 

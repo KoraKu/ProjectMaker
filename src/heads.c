@@ -65,7 +65,7 @@ int newheader(int argc, char *argv[], int language, int headeronly) {
     if (access(name, F_OK) == 0) {
         chdir(".."); //go backs
         errno = EEXIST;
-        perror("A header with this name already exists ");
+        perror("A header with this name already exists.");
         return -1;
     }
 
@@ -78,7 +78,7 @@ int newheader(int argc, char *argv[], int language, int headeronly) {
     chdir("..");
 
 
-    printf("Succesfully created header %s \n", name);
+    printf("Succesfully created header %s.\n", name);
 
     if (!headeronly) {
         //repalce *.h* by *.c* in name
@@ -95,7 +95,7 @@ int newheader(int argc, char *argv[], int language, int headeronly) {
 
         chdir(".."); //go back
 
-        printf("Succesfully created source file %s\n");
+        printf("Succesfully created source file %s.\n", argv[3]);
 
     }
     return 0;

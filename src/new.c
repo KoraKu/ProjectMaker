@@ -17,7 +17,7 @@ int newcmd(int argc, char* argv[]) {
         
         if (argc < 4) {
             errno = EINVAL;
-            perror("No project language was provided, choose either \"c\" or \"cpp\"");
+            perror("No project language was provided, choose either \"c\" or \"cpp\".");
             return -1;
         }
 
@@ -40,7 +40,7 @@ int newcmd(int argc, char* argv[]) {
     //if we don't create a new project, we get the project language from the .pjm.info
     if (access(PROJECT_FILE, F_OK) != 0) {
         errno = ENOENT;
-        perror("No ProjectManager file found, if this directory is already a project your can regenerate the file using `pjm new project <language>`");
+        perror("No ProjectManager file found, if this directory is already a project your can regenerate the file using `pjm new project <language>`.");
         return -1;
     }
     char lang[4] = "";
@@ -53,7 +53,7 @@ int newcmd(int argc, char* argv[]) {
             language = 1;
         } else {
             errno = EINVAL;
-            perror("Invalid project language in .pjm.info. Please delete and regenerate using `pjm new project <language>`");
+            perror("Invalid project language in '.pjm.info'. Please delete and regenerate using `pjm new project <language>`.");
             return -1;
         }
     
@@ -70,7 +70,7 @@ int newcmd(int argc, char* argv[]) {
         return newdir(argc, argv);
     } else {
         errno = EINVAL;
-        perror("Invalid item name, see 'pjm help' for a list of available items");
+        perror("Invalid item name, see 'pjm help' for a list of available items.");
         return -1;
     }
 

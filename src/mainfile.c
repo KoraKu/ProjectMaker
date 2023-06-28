@@ -3,7 +3,7 @@
 int newmain(int argc, char *argv[], int language) {
     if (access("main.c", F_OK) == 0 || access("main.cpp", F_OK) == 0) {
         errno = EEXIST;
-        perror("Main file already exists");
+        perror("Main file already exists.");
         return -1;
     }
     
