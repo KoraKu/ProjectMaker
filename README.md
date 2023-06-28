@@ -46,7 +46,18 @@ This command will create the hierarchy of a project in **the current directory**
 > Note : the makefile is made to work with the `src` & `header` folder along side a `main.c` (or `.cpp`) in `./`.
 
 > Note : `todo`, `test`, `.pjm.info`, the `.o`'s and executable files resulting from the compilation (respectivly stored in `obj/` and `bin/`, both created by `makefile` when compiling) are all **ignored** by `.gitignore` by default.
+### Creating directories
+To automaticaly create sub-dir in `headers` and `src` you must provide the following arguments
+- `new`
+- `dir`
+- directory name
+> Important : Make sur you execute the command at the root of your project
+###### Example :
+```bash
+$ pjm new dir math
+```
 
+> Note : The `makefile` will automatically create the corresponding directories in `obj` before compiling
 ### Creating headers
 
 To create a new header you must provide the following arguments :
@@ -88,6 +99,8 @@ To create a class the project language must be C++.
 Project Manager also generate template class inside the generated files making `class` more useful than `header` when working with C++
 
 Class creation is the same as header creation with the `class` keyword replacing the `header` keyword
+
+###### Example :
 
 `pjm new class entity`
 
