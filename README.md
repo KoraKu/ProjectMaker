@@ -1,4 +1,4 @@
-# ProjectMaker
+# ProjectManager
 A CLI tool to help you setup and manage C and C++ project in a easy and efficient way !
 
 ## Installation
